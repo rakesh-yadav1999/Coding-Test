@@ -1,0 +1,33 @@
+/* CSS styling for login page */
+
+body{
+    background-color: #74b9ff;
+}
+
+#box{
+    background-image: url(../Images/Login_Background.jpg);
+    background-size: cover;
+    background-position: top center;
+    width: 450px;
+    margin: auto;
+}
+
+#text{
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+#box input{
+    font-size: 20px;
+    margin: 20px;
+}
+
+#sub{
+    background-color: #74b9ff;
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Signup Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Stylesheet Insertion-->
+        <link rel="stylesheet" href="CSS/Signup.css"/>
+        
+    </head>
+    <body>
+        
+        <!-- JavaScript Insertion-->
+        <script type="text/javascript" src="JavaScript/script.js"></script>
+        
+        <div>
+            <!-- creating form for signup page -->
+            <p style="font-size: 30px;"> Sign Up </p>
+            <form method="post" action="signup" onsubmit="return validate();">
+                <p>Enter Username : <input type="text" name="user" required/></p>
+                <p>Enter Email :<input type="email" name="email" id="email" required/></p>
+                <p>Enter Organization :<input type="text" name="organ" /></p>
+                <p>Enter DOB :<input type="date" name="DOB" id="DOB" /></p>
+            <p>Select Gender : <input type="radio" name="gender" value="male" required>Male
+                <input type="radio" name="gender" value="female">Female</p>
+            <p>Enter Country :<input type="text" name="country" /></p>
+            <p>Enter State :<input type="text" name="state" /></p>
+            <p>Enter City :<input type="text" name="city"/></p>
+            <p>Enter Password :<input type="password" name="pass" id="pass" required/></p>
+            <p>Confirm Password :<input type="password" name="cpass" id="cpass" required/></p>
+            <button type="submit" name="sub" value="Submit">Submit</button>
+            </form>
+            <a href="index.html" style="color: white; font-size: 20px; margin: 10px; padding-left: 50%;">Already have a account</a>
+        </div>
+    </body>
+</html>

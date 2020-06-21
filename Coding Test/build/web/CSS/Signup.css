@@ -1,0 +1,23 @@
+/* CSS styling for signup page */
+
+body{
+    background-color: #74b9ff;
+}
+
+div{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    margin: auto 35%;
+}
+
+div p{
+    padding: 10px;
+}
+
+div button{
+    background-color: blueviolet;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+}
