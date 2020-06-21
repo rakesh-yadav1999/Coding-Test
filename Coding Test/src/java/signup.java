@@ -36,7 +36,9 @@ public class signup extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-       try{
+        if(!(request.getParameter("pass").length() <=8 && request.getParameter("pass").equals(request.getParameter("cpass"))))
+        {
+            try{
             Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Coding_Test","root","");
             PreparedStatement p=con.prepareStatement("insert into Coding_Table values (?,?,?,?,?,?,?,?,?)");
@@ -58,6 +60,14 @@ public class signup extends HttpServlet {
             rd.forward(request, response);
        }
        catch(Exception e){}
+            
+        }
+        else{
+            out.print("<html><head><script>");
+            out.print("alert('Enter valid password');");
+            out.print("</script></head></html>");
+        }
+        
     }
     
 
